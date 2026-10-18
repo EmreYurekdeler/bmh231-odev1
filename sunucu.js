@@ -13,7 +13,7 @@ const server = http.createServer((req, res) => {
 
     if (req.url === '/') {
         res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
-        res.end('<h1>BMH231 Web Programlama Ana Sayfasi</h1><p><a href="/hakkimda">Hakkımda</a> sayfasına git</p>');
+        res.end('<h1>Baslik A Degisikligi</h1><p><a href="/hakkimda">Hakkımda</a> sayfasına git</p>');
     } else if (req.url === '/hakkimda') {
         res.writeHead(200, { 'Content-Type': 'text/html; charset=utf-8' });
         res.end('<h1>Hakkımda</h1><p>Ben Yozgat Bozok Üniversitesi Bilgisayar Mühendisliği öğrencisiyim.</p>');
